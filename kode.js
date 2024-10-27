@@ -21,6 +21,7 @@ let aktivtBilde = 0;
 
 // Ny løysing, der biletet er bakgrunnen på heile nettsida
 document.body.style.backgroundImage = `url(bilder/${bildeGalleriMedTekst[aktivtBilde].bilde})`;
+bildetekst.innerText = bildeGalleriMedTekst[aktivtBilde].bildeTekst;
 
 // Køyrer skiftBilde-funksjonen så ofte som tidsintervallet tilseier
 tidsintervall = 5000;
