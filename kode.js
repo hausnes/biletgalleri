@@ -24,7 +24,7 @@ document.body.style.backgroundImage = `url(bilder/${bildeGalleriMedTekst[aktivtB
 bildetekst.innerText = bildeGalleriMedTekst[aktivtBilde].bildeTekst;
 
 // Køyrer skiftBilde-funksjonen så ofte som tidsintervallet tilseier
-tidsintervall = 5000;
+tidsintervall = 10000;
 let endring = setInterval(skiftBilde, tidsintervall);
 
 // Funksjonen som faktisk byter biletet
