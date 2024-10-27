@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+h1 {
+    /* Posisjonering */
+    position: absolute;
+    right: 5%;
+    top: 5%;
+
+    /* Stil */
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
