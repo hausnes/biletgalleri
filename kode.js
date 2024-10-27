@@ -50,7 +50,7 @@ document.addEventListener("keydown", (event) => {
         if (nyttTidsintervall !== null) {
             tidsintervall = parseInt(nyttTidsintervall);
             clearInterval(endring);
-            intervalId = setInterval(skiftBilde, tidsintervall);
+            endring = setInterval(skiftBilde, tidsintervall);
         }
     }
 });
