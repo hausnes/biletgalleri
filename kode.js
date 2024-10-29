@@ -43,8 +43,9 @@ function skiftBilde() {
     // bilde.src = "bilder/" + bildeGalleriMedTekst[aktivtBilde].bilde;
 }
 
-// Gjer det mogleg å endre innstillingane
+// Lyttar etter at brukaren trykker på tastaturet
 document.addEventListener("keydown", (event) => {
+    // Dersom brukaren trykker på i (eller I), så opnast og endrast innstillingane
     if (event.key === "i" || event.key === "I") {
         let nyttTidsintervall = prompt("Angi nytt tidsintervall i millisekunder:", tidsintervall);
         if (nyttTidsintervall !== null) {
@@ -52,5 +53,12 @@ document.addEventListener("keydown", (event) => {
             clearInterval(endring);
             endring = setInterval(skiftBilde, tidsintervall);
         }
+    }
+
+    // Dersom brukaren trykker på p (eller P), så spelast ei lydfil av
+    if (event.key === "p" || event.key === "P") {
+        // Copyright for musikken: https://pixabay.com/music/dubstep-soulsweeper-252499/
+        let lyd = new Audio("musikk/soulsweeper-252499.mp3");
+        lyd.play();
     }
 });
